@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Web Chat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js" defer></script>
+
+    <!-- this is for the key modules -->
+    <script src="javascript/keys.js" type="modules" defer></script>
+
+    <script src="javascript/script.js" defer> </script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js"></script>
+
+</head>
+
+
+<body>
+    <!-- add to me -->
+    <div id="threads" class="thread">
+        
+        <h1 id="welcomeMessage"></h1>
+        <button id="logOut" class="logOut">LogOut</button>
+    </div>
+
+
+    <div id="chatLog" class="chat">
+    </div>
+    <div id="contributeChat" class="chatInput">
+        <input type="text" id="inputText" placeholder="type message">
+        <button id="sendButton">></button>
+    </div>
+
+
+
+    <div class="loginC" id="loginBlock">
+        <div id="loginMessageContainer" class="loginMessageContainer" > <h1 id="loginMessage" class="loginMessage">My Chat</h1></div>
+         <input type="text" id="login" class="loginInput" placeholder="Username">
+         <input type="password" id="password" class="passwordInput" placeholder="Password">
+        <button id="logMeIn" class="logMeIn">Log in</button>
+    </div>
+
+</body>
+
+</html>
