@@ -1,19 +1,90 @@
 
-
 img {
-    width: auto ;
-    max-width: 100% ;
-    height: auto ;
-  } 
+    max-width: 100%;
+    height: auto;
+  }
 
 
 body
 {
-    background-color:grey;
+    background-color:#757575;
+    margin:0px;
+    margin-bottom:2em;
+
 }
 
 
 .container
 {
-    background-color:grey;
+    font-family: 'Titillium Web', sans-serif;
+
+    color:white;
+
+    background-color:#212121;
+    border-radius:12px;
+    text-align:center;
+    margin:1em;
+}
+
+h1
+{
+    font-size:4em;
+}
+
+
+p
+{
+    font-size:3em;
+}
+
+#content
+{
+    overflow:scroll;
+}
+
+
+#navigation
+{
+    background-color:#81D4FA;
+    position:fixed;
+    bottom:0;
+    width:100%;
+
+
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+
+} 
+
+
+
+
+
+
+li
+{
+float: left;
+}
+
+
+.navItems
+{
+    display:block;
+    padding: 8px;
+    /* background-color:#01579B; */
+    font-size:2em;
+}
+
+
+li a:hover
+{
+    background-color:#555;
+    color:white;
+}
+
+
+#about
+{
+    float:right;
 }
