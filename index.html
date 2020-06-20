@@ -6,50 +6,92 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
+
+  <!-- BOOT STRAP 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 
+  <!-- SLICK SLIDER -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- PARALLAX -->
+  <script type="text/javascript" src="javascript\parallax.js"></script>
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
+  <script defer type="text/javascript" src="javascript/script.js"></script>
   <title>Jesse Hillman - Software Engineer</title>
 </head>
 
 <body>
 
   <ul id="navigation"> 
-
+    <li> <a class="navItems">Home</a></li>
     <li> <a class="navItems">Hire</a></li>
     <li id="about"> <a  class="navItems">About</a></li>
-      </ul>
+  </ul>
 
-  <div id="content">
+  <!-- CONTENT HERE -->
+  <ul class="main-slideshow">
+    <li>
+      <!-- <div class="slideshow-slide-image parallax-window" data-parallax="scroll" data-image-src="/project-screenshots/computer.jpg" style="background:url('/project-screenshots/computer.jpg')">  -->
+        <div class="parallax-window" data-parallax="scroll" data-image-src="/project-screenshots/computer.jpg"></div>
 
-    <div class="container">
+        <div class="slide-text-content">
+        <h1>Jesse Hillman</h1>
+        <p> Software Engineer </p>
+      </div>
+      </div>
+    </li>
+  </ul>   
+  <section class="secondary-color">
 
-      <p>
-        I make business solutions, usually in Android, or Desktop
-        Enviornments.
-      </p>
+    <div class="container call-to-action">
+      <div class="row">
+        <div class="col-sm-3 col-md-6">
+          <div class="text">
+            <h2>.Net Experience</h2>
+            <p>Big Results</p>  
+          </div>
+        
+        </div>
+        <div class="col-sm-3 col-md-2">
+          <button class="btn btn-primary"> Learn More</button>
+    
+        </div>
+    
+       </div>
+     </div>
+ 
 
-    </div>
+</section>
 
+<section class="primary-color">
+  <div class="container call-to-action">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="text">
+          <h2>Local Talent</h2>
+          <p>Sql Knowledge</p>  
+        </div>
+      
+      </div>
+      <div class="col-lg-2">
+        <button class="btn btn-primary"> Learn More</button>
+  
+      </div>
+  
+     </div>
+   </div>
+</section>
 
+  <!-- END CONTENT -->
 
-    <div class="container">
-      <h1>Web Chat</h1>
-      <a href="web-chat/index.html">
-        <img alt="Picture of a chat app" src="project-screenshots/web-chat.png" onmouseover="this.src = 'project-screenshots/web-chat-login.png'"
-          onmouseout="this.src = 'project-screenshots/web-chat.png'" id="webChat">
-      </a>
-    </div>
-
-  </div>
-
-
-
-
-
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

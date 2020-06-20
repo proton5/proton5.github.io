@@ -1,29 +1,30 @@
+/**********
+* Author: Jesse Hillman
+*
+* A1 - Main Layout
+* A2 - Navigation
+* A3 - Main Slideshow
+* A4 - Components
+*
+* B1 - Colors
+*
+*
+*************/
 
-img {
-    max-width: 100%;
-    height: auto;
-  }
+
+/* COLOR PALLETTE
+
+#4287f5; - lightest blue
+#fcba03 - Yellow - almost orange
+*/
 
 
+/* A1 */
 body
 {
-    background-color:#757575;
+    background-color:#ffffff;
     margin:0px;
     margin-bottom:2em;
-
-}
-
-
-.container
-{
-    font-family: 'Titillium Web', sans-serif;
-
-    color:white;
-
-    background-color:#212121;
-    border-radius:12px;
-    text-align:center;
-    margin:1em;
 }
 
 h1
@@ -31,36 +32,30 @@ h1
     font-size:4em;
 }
 
+h2
+{
+    font-size:3em;
+}
 
 p
 {
     font-size:3em;
 }
 
-#content
-{
-    overflow:scroll;
-}
-
-
+/* A2 */
 #navigation
 {
     background-color:#81D4FA;
     position:fixed;
-    bottom:0;
+    top:0;
     width:100%;
-
-
     list-style-type:none;
     margin:0px;
     padding:0px;
-
+    background-color: rgba(0, 0, 0, .5);
+    z-index:2;
+    color:white;
 } 
-
-
-
-
-
 
 li
 {
@@ -72,10 +67,8 @@ float: left;
 {
     display:block;
     padding: 8px;
-    /* background-color:#01579B; */
     font-size:2em;
 }
-
 
 li a:hover
 {
@@ -83,8 +76,73 @@ li a:hover
     color:white;
 }
 
-
-#about
+/* A3 - MAIN SLIDESHOW */
+.main-slideshow
 {
-    float:right;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.main-slideshow li img
+{
+    width:100%;
+}
+
+.slideshow-slide-image
+{
+    background-position:center !important;
+    background-size:cover !important;
+    min-height:600px;
+    height:600px;
+}
+
+.slide-text-content
+{
+    background-color: rgba(255,255,255,0.5);
+
+    position: absolute;
+    bottom: 0;
+    min-width:500px;
+
+    text-align:center;
+}
+
+.call-to-action
+{
+    padding:20px;
+    /* display:flex;
+    flex-direction:row; */
+}
+
+.call-to-action .btn
+{
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  
+  font-size: 3em;
+
+}
+
+/* B1 */
+.primary-color
+{
+    background-color:#4287f5;
+    color:white;
+
+}
+
+.secondary-color
+{
+    background-color:#e6aa05;
+}
+
+/* PARALLAX */
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
 }
