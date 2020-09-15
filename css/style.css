@@ -57,6 +57,11 @@ p
     color:white;
 } 
 
+.link
+{
+    color:white;
+}
+
 li
 {
 float: left;
@@ -138,6 +143,17 @@ li a:hover
 .secondary-color
 {
     background-color:#e6aa05;
+}
+
+.informational-section
+{
+    background-color:black;
+    color:white;
+}
+
+.informational-section p 
+{
+    font-size:1.5em;
 }
 
 /* PARALLAX */
